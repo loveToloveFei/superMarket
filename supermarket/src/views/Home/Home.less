@@ -1,0 +1,74 @@
+.home {
+    .el-container {
+        .el-aside {
+            .sideNav {
+                .el-menu {
+                    background-color: #18273b;
+
+                    i {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        // font: 18px;
+                    }
+
+                    .el-menu-item {
+                        height: 40px;
+                        line-height: 40px;
+                        color: #95a5a6; //特殊一级所有二级首页样式设置
+
+                        &.is-active,
+                        &:hover {
+                            background-color: #111b29;
+                            color: #fff;
+                        }
+                    }
+
+                    .el-submenu {
+                        &.is-opened {
+                            .el-submenu__title {
+
+                                i,
+                                span {
+                                    color: #fff !important;
+                                }
+                            }
+                        }
+
+                        .el-submenu__title {
+                            color: #95a5a6;
+
+                            &:hover {
+                                background-color: #18273b;
+
+                                i,
+                                span {
+                                    color: #fff !important;
+                                }
+                            }
+                        }
+
+                        .el-menu {
+                            .el-menu-item-group {
+                                .el-menu-item-group__title {
+                                    padding: 0;
+                                }
+
+                                //清楚二级和一级之间的间隙
+                                ul>li {
+                                    padding-left: 60px !important; //二级菜单样式设置
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .el-container {
+            .el-main {
+                min-height: 500px;
+            }
+        }
+    }
+
+}
